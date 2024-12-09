@@ -65,7 +65,7 @@ public class AuthorizationTest {
 
     @AfterMethod(alwaysRun = true)
     public void tearDown() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.quit();
     }
 
