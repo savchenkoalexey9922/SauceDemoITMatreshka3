@@ -22,7 +22,6 @@ public class AuthorizationTest {
         // tions.addArguments("disable-notification"); // не показывать уведомления
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); //неявное ожидание прогрузки элементов на странице
-
     }
 
     @Test   //positive
@@ -64,8 +63,7 @@ public class AuthorizationTest {
     }
 
     @AfterMethod(alwaysRun = true)
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(2000);
+    public void tearDown() {
         driver.quit();
     }
 
